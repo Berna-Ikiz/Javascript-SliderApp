@@ -36,7 +36,7 @@ var settings = {
 
 init(settings)
 
-function init(settings) {
+function init(s) {
     var prev;
     interval = setInterval(function () {
         if (settings.random) {
@@ -47,10 +47,7 @@ function init(settings) {
             prev = index;
         } else {
             //artan index 
-            index++;
-            showSlide(index)
-
-            console.log(index)
+            index++;          
         }
         showSlide(index)
     }, settings.duration)
